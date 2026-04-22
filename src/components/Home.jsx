@@ -18,22 +18,21 @@ function Home() {
               <h1 className="heading">
                 {/* <TypeName /> */}
 <Typewriter
-                          strings={[
+                          words={[
                             "Hi, I'm Vivek",
                           ]}
                           typeSpeed={50}
                           deleteSpeed={80}
-                          delaySpeed={1000}
-                          loop ={false}
+                          delaySpeed={1000}                      
                           className=""
                         />  
               </h1>
               <div className="content">
                 <p className="mt-4">
                   A passionate{" "}
-                  <span className="font-semibold">
-                    <Typed
-                          strings={[
+                  <span className="font-semibold text-green-700">
+                    <Typewriter
+                          words={[
                             "MERN Stack Developer",
                             "React developer",
                             "full stack developer",
@@ -42,7 +41,7 @@ function Home() {
                           typeSpeed={50}
                           backSpeed={30}
                           loop
-                          className="text-xl text-teal-400"
+                          className="text-xl text-teal-400 "
                         /> 
                         </span>{" "}
                         <br />
