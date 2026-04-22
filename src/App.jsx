@@ -8,18 +8,15 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Message from "./components/message";
 import HomeVideo from "./components/HomeVideo";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+
 
 function App() {
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-    });
+    AOS.init({ duration: 1200, once: true });
   }, []);
-
   return (
     <Router>
       <Routes>

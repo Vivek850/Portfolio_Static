@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
-    const { name, email, message } = req.body;
+    const { name, email, subject ,message } = req.body;
 
     // Transporter setup
     const transporter = nodemailer.createTransport({
@@ -14,7 +14,6 @@ export default async function handler(req, res) {
     });
 
     try {
-      const {name ,email, subject, message } = req.body;
       await transporter.sendMail({
         from: email,
         to: process.env.EMAIL_USER, // तुम्हारा email
