@@ -3,8 +3,7 @@ import "./Home.css";
 import HomeVideo from "./HomeVideo";
 // import TypeName from "./TypeName";
 import React from "react";
-import Typed from "react-typed";
-
+import { Typewriter } from 'react-simple-typewriter'
 function Home() {
   return (
     <>
@@ -18,12 +17,13 @@ function Home() {
             >
               <h1 className="heading">
                 {/* <TypeName /> */}
-<Typed
+<Typewriter
                           strings={[
                             "Hi, I'm Vivek",
                           ]}
                           typeSpeed={50}
-                          backSpeed={80}
+                          deleteSpeed={80}
+                          delaySpeed={1000}
                           loop ={false}
                           className=""
                         />  
