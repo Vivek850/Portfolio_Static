@@ -18,7 +18,15 @@ export default async function handler(req, res) {
         from: email,
         to: process.env.EMAIL_USER, // तुम्हारा email
         subject: subject || `New Contact from ${name}`,
-        text: message,
+        text: `
+    You have a new contact request:
+
+    Name: ${name}
+    Email: ${email}
+    Subject: ${subject}
+    Message: ${message}
+  `,
+  replyTo: email // इससे तुम सीधे user को reply कर सकते हो,
       });
 
       res.status(200).json({ success: true });
