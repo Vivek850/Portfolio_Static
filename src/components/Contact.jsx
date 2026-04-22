@@ -22,6 +22,7 @@ function Contact() {
     });
     if(res.ok) {
       setStatus("Message sent successfully!");
+      e.target.reset(); // to empty the form
     } else {
       setStatus("Failed to send message.");
     }
