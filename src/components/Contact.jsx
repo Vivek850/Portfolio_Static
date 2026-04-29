@@ -4,6 +4,7 @@ import {useState} from "react";
 function Contact() {
  const [status, setStatus] = useState("");
 
+
  const handleSubmit = async (e) =>{
   e.preventDefault();
   const formData = {
@@ -23,7 +24,8 @@ function Contact() {
     if(res.ok) {
       setStatus("Message sent successfully!");
       e.target.reset(); // to empty the form
-    } else {
+    } 
+    else {
       setStatus("Failed to send message.");
     }
   }
