@@ -6,16 +6,16 @@ dl{
 }
 dt{
     @apply flex h-max w-max border-2 ml-2 items-center justify-center rounded-3xl 
-    w-[120px] h-[120px]
     xs:w-[40px] xs:h-[40px] flex-wrap gap-4
-    smx:w-[40px] smx:h-[40px] flex-wrap
-    sm:w-[80px] sm:h-[80px] flex-col
+    smx:w-[40px] smx:h-[40px] flex-wrap 
+    sm:w-[80px] sm:h-[80px] flex-col  
     md:w-[80px] md:h-[80px] flex-col
     lg:w-[80px] lg:h-[80px] flex-col
     xl:w-[100px] xl:h-[100px] flex-row
     2xl:w-[120px] 2xl:h-[120px] flex-row
     3xl:w-[120px] 3xl:h-[120px] flex-row
     4xl:w-[120px] 4xl:h-[120px]  flex-row
+    5xl:w-[120px] 5xl:h-[120px]  flex-row
 }
 
 span{
@@ -49,8 +49,8 @@ header{
 .Uniq{
     @apply  text-center  mt-1 text-white ml-[28px] break-words text-ellipsis bg-transparent
     h-[120px] w-[220px] text-[38px]
-    xs:w-[80px] xs:h-[40px] text-[14px]
-    smx:w-[80px] smx:h-[40px] text-[14px]
+    xs:w-[100px] xs:h-[40px] text-[14px]
+    smx:w-[100px] smx:h-[40px] text-[14px]
     sm:w-[160px] sm:h-[80px] text-[14px]
     md:w-[160px] md:h-[80px] text-[16px]
     lg:w-[160px] lg:h-[80px] text-[16px]

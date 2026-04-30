@@ -99,7 +99,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {open && (
         <ul ref={menuRef}
-         className="absolute top-14 left-0 w-full bg-gray-800 flex flex-col items-center gap-4 py-4 sm:hidden">
+         className="absolute top-14 left-0 w-full bg-transparent backdrop-blur-sm flex flex-col items-center gap-4 py-4 sm:hidden">
           <li>
             <button
               onClick={() =>{

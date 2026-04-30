@@ -10,7 +10,7 @@ function Skill() {
 
         <div data-aos="fade-up">
           <div className="skill">
-            <span className="Hname">frontend</span>
+            <span className="Hname">FRONTEND</span>
             <div className="list">
               <dl className="flex flex-wrap gap-4 sm:flex-row">
                 <dt
@@ -49,7 +49,7 @@ function Skill() {
           </div>
 
           <div className="skill">
-            <span className="Hname">Backend</span>
+            <span className="Hname">BACKEND</span>
             <div className="list">
               <dl className="flex flex-wrap gap-4 sm:flex-row">
                 <dt
